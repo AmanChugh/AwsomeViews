@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">TextViewDemo</string>
+    <string name="titi_light">Titi-light.ttf</string>
+    <string name="titi_regular">Titi-regular.ttf</string>
+    <string name="titi_bold">Titi_bold.ttf</string>
+    <string name="html_text"><b><i>This is HTML text </i></b></string>
+</resources>
