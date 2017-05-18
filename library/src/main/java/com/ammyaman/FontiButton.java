@@ -3,8 +3,8 @@ package com.ammyaman;
 import android.content.Context;
 import android.content.res.TypedArray;
 import android.graphics.Typeface;
+import android.support.v7.widget.AppCompatButton;
 import android.util.AttributeSet;
-import android.widget.Button;
 
 import com.ammyaman.ammy.R;
 
@@ -12,39 +12,39 @@ import com.ammyaman.ammy.R;
 /**
  * Created by amandeep on 14/10/15.
  */
-public class AmmyButton extends Button {
+public class FontiButton extends AppCompatButton {
 
     private String mFont;
 
-    public AmmyButton(Context context) {
+    public FontiButton(Context context) {
         super(context, null);
         init(context);
     }
 
 
-    public AmmyButton(Context context, AttributeSet attrs) {
+    public FontiButton(Context context, AttributeSet attrs) {
         super(context, attrs);
         TypedArray a = context.getTheme().obtainStyledAttributes(
                 attrs,
-                R.styleable.AmmyButton,
+                R.styleable.FontiButton,
                 0, 0);
         try {
-            mFont = a.getString(R.styleable.AmmyButton_font);
+            mFont = a.getString(R.styleable.FontiButton_font);
         } finally {
             a.recycle();
         }
         init(context);
     }
 
-    public AmmyButton(Context context, AttributeSet attrs, int defStyleAttr) {
+    public FontiButton(Context context, AttributeSet attrs, int defStyleAttr) {
         super(context, attrs, defStyleAttr);
         TypedArray a = context.getTheme().obtainStyledAttributes(
                 attrs,
-                R.styleable.AmmyButton,
+                R.styleable.FontiButton,
                 0, 0);
 
         try {
-            mFont = a.getString(R.styleable.AmmyButton_font);
+            mFont = a.getString(R.styleable.FontiButton_font);
         } finally {
             a.recycle();
         }

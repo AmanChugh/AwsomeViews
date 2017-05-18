@@ -2,13 +2,13 @@ apply plugin: 'com.android.library'
 
 android {
     compileSdkVersion 25
-    buildToolsVersion "24.0.3"
+    buildToolsVersion '25.0.0'
 
     defaultConfig {
         minSdkVersion 11
         targetSdkVersion 25
         versionCode 1
-        versionName "1.0"
+        versionName "1.0.2"
 
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
 
@@ -20,6 +20,34 @@ android {
         }
     }
 }
+
+ext {
+    bintrayRepo = 'maven'
+    bintrayName = 'AwsomeViews'
+//
+    publishedGroupId = 'com.ammyaman'
+    libraryName = 'AwsomeViews'
+    artifact = 'AwsomeViews'
+
+    libraryDescription = 'A wrapper library to give access to put fonts from xml file'
+
+    siteUrl = 'https://github.com/AmanChugh/AwsomeViews'
+    gitUrl = 'https://github.com/AmanChugh/AwsomeViews.git'
+
+    libraryVersion = '1.0.2'
+
+    developerId = 'amanchugh'
+    developerName = 'Aman Deep'
+    developerEmail = 'amanarora0806@yahoo.com'
+
+    licenseName = 'The Apache Software License, Version 2.0'
+    licenseUrl = 'http://www.apache.org/licenses/LICENSE-2.0.txt'
+    allLicenses = ["Apache-2.0"]
+
+    apply from: 'https://raw.githubusercontent.com/nuuneoi/JCenter/master/installv1.gradle'
+    apply from: 'https://raw.githubusercontent.com/nuuneoi/JCenter/master/bintrayv1.gradle'
+}
+
 
 dependencies {
     compile fileTree(dir: 'libs', include: ['*.jar'])

@@ -13,27 +13,27 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.aman.textviewdemo.MainActivity">
 
-    <com.ammyaman.AmmyTextView
+    <com.ammyaman.FontiTextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="TexyView with font Titi Light"
         app:font="@string/titi_light" />
 
-    <com.ammyaman.AmmyButton
+    <com.ammyaman.FontiButton
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
         android:text="Button With Titi Bold Font"
         app:font="@string/titi_bold" />
 
-    <com.ammyaman.AmmyEditText
+    <com.ammyaman.FontiEditText
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
         android:hint="EditText with Titi Regular font."
         app:font="@string/titi_regular" />
 
-    <com.ammyaman.AmmyTextView
+    <com.ammyaman.FontiTextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/html_text"

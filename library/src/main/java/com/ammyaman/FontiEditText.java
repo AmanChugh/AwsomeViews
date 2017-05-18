@@ -3,8 +3,8 @@ package com.ammyaman;
 import android.content.Context;
 import android.content.res.TypedArray;
 import android.graphics.Typeface;
+import android.support.v7.widget.AppCompatEditText;
 import android.util.AttributeSet;
-import android.widget.EditText;
 
 import com.ammyaman.ammy.R;
 
@@ -12,40 +12,40 @@ import com.ammyaman.ammy.R;
 /**
  * Created by amandeep on 14/10/15.
  */
-public class AmmyEditText extends EditText {
+public class FontiEditText extends AppCompatEditText {
 
     private String mFont;
 
 
-    public AmmyEditText(Context context) {
+    public FontiEditText(Context context) {
         super(context, null);
         init(context);
     }
 
 
-    public AmmyEditText(Context context, AttributeSet attrs) {
+    public FontiEditText(Context context, AttributeSet attrs) {
         super(context, attrs);
         TypedArray a = context.getTheme().obtainStyledAttributes(
                 attrs,
-                R.styleable.AmmyEditText,
+                R.styleable.FontiEditText,
                 0, 0);
         try {
-            mFont = a.getString(R.styleable.AmmyEditText_font);
+            mFont = a.getString(R.styleable.FontiEditText_font);
         } finally {
             a.recycle();
         }
         init(context);
     }
 
-    public AmmyEditText(Context context, AttributeSet attrs, int defStyleAttr) {
+    public FontiEditText(Context context, AttributeSet attrs, int defStyleAttr) {
         super(context, attrs, defStyleAttr);
         TypedArray a = context.getTheme().obtainStyledAttributes(
                 attrs,
-                R.styleable.AmmyEditText,
+                R.styleable.FontiEditText,
                 0, 0);
 
         try {
-            mFont = a.getString(R.styleable.AmmyEditText_font);
+            mFont = a.getString(R.styleable.FontiEditText_font);
         } finally {
             a.recycle();
         }
